@@ -8,7 +8,7 @@ import { Context } from "../../context/context";
 
 const Sidebar = () => {
   const [extended, setExtended] = useState(false);
-  const { onSent, prevPrompts, setRecentPrompt } = useContext(Context);
+  const { onSent, prevPrompts, setRecentPrompt, newChat } = useContext(Context);
 
   const loadPrompt = async (prompt) => {
     setRecentPrompt;
@@ -21,7 +21,7 @@ const Sidebar = () => {
           onClick={() => setExtended(!extended)}
           className="bi bi-list menu"
         ></i>
-        <div className="new-chat">
+        <div onClick={() => newChat()} className="new-chat">
           <i className="bi bi-plus-lg"></i>
           {extended ? <p>New Chat</p> : null}
         </div>
