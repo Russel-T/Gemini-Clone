@@ -31,7 +31,7 @@ const Sidebar = () => {
                 // eslint-disable-next-line react/jsx-key
                 <div className="recent-entry">
                   <i className="bi bi-chat"></i>
-                  <p>{item}...</p>
+                  <p>{item.slice(0, 18)}...</p>
                 </div>
               );
             })}
