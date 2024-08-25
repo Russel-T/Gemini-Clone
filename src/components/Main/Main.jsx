@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./main.css";
+import "./Main.css";
 // import { Context } from "../../context/context";
 import { Context } from "./context/Context.jsx";
 const main = () => {
