@@ -77,7 +77,9 @@ const main = () => {
             <div>
               <i className="bi bi-image"></i>
               <i className="bi bi-mic"></i>
-              <i onClick={() => onSent()} className="bi bi-send"></i>
+              {input ? (
+                <i onClick={() => onSent()} className="bi bi-send"></i>
+              ) : null}
             </div>
           </div>
           <p className="bottom-info">
