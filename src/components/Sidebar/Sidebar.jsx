@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import "./Sidebar.css";
-import { Context } from "../../context/context";
+// import { Context } from "../../context/context";
+import {Context} from "./context/Context.jsx";
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
