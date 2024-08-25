@@ -32,7 +32,7 @@ const Sidebar = () => {
       </div>
       <div className="bottom">
         <div className="bottom-item recent-entry">
-          <i className="bi bi-question-circle"></i>
+          <i className="bi bi-question-lg"></i>
           {extended ? <p>Help</p> : null}
         </div>
         <div className="bottom-item recent-entry">

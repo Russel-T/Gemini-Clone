@@ -9,19 +9,12 @@
 
 .sidebar .bi {
   font-size: 1rem; /* Adjust the size as needed */
-}
-
-.sidebar .bi-list {
-  font-size: 1.5rem; /* Specific size for a particular icon, if needed */
-}
-
-.sidebar .bi-file-plus-fill {
-  font-size: 1.75rem; /* Specific size for another icon */
+  margin-left: 5px;
 }
 
 .sidebar .menu {
   display: block;
-  margin-left: 10px;
+  margin-left: 15px;
   cursor: pointer;
 }
 
@@ -29,7 +22,7 @@
   margin-top: 50px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
   padding: 10px 15px;
   background-color: #e6eaf1;
   border-radius: 50px;
@@ -65,6 +58,6 @@
   flex-direction: column;
 }
 .sidebar .bottom-item {
-  padding-right: 10px;
+  padding-right: 20px;
   cursor: pointer;
 }
