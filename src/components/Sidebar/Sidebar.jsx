@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Sidebar.css";
+import { Context } from "../../context/context";
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
@@ -7,6 +8,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [extended, setExtended] = useState(false);
+  const { onSent, prevPrompts, setRecentPrompt } = useContext(Context);
 
   return (
     <div className="sidebar">
@@ -23,10 +25,16 @@ const Sidebar = () => {
         {extended ? (
           <div className="recent">
             <p className="recent-title">Recent</p>
-            <div className="recent-entry">
-              <i className="bi bi-chat"></i>
-              <p>What is react...</p>
-            </div>
+
+            {prevPrompts.map((item, index) => {
+              return (
+                // eslint-disable-next-line react/jsx-key
+                <div className="recent-entry">
+                  <i className="bi bi-chat"></i>
+                  <p>{item}...</p>
+                </div>
+              );
+            })}
           </div>
         ) : null}
       </div>
