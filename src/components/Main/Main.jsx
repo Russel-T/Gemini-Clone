@@ -53,8 +53,15 @@ const main = () => {
             </div>
             <div className="result-data">
               <i className="bi bi-stars"></i>
-              {/* problem in: 1:14:52 */}
-              <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+              {loading ? (
+                <div className="loader">
+                  <hr />
+                  <hr />
+                  <hr />
+                </div>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+              )}
             </div>
           </div>
         )}
